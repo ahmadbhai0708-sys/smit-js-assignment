@@ -40,6 +40,7 @@ alert("You learned something new every day!");
 
 
 
+
 // ===============================
 // Chapter 2 - Variables for Strings
 // ===============================
