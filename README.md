@@ -24,9 +24,7 @@ alert("Hello... I can run JS through my web browser's console");
 // Q6
 alert("You learned something new every day!");
 
-// Q7
-// Practice placement of <script> tag
-
+// Q7: Practice placement of <script> tag
 // a. In the <head> section
 // <head><script src="app.js"></script></head>
 
@@ -38,6 +36,7 @@ alert("You learned something new every day!");
 
 // d. At the end of the <body> (Best Practice)
 // <body><h1>Title</h1><script src="app.js"></script></body>
+
 
 
 
