@@ -37,9 +37,6 @@ alert("You learned something new every day!");
 // <body><h1>Title</h1><script src="app.js"></script></body>
 
 
-
-
-
 // ===============================
 // Chapter 2 - Variables for Strings
 // ===============================
