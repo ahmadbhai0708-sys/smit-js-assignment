@@ -1,4 +1,4 @@
-# smit-js-assignment
+Assignment
 
 
 // ===============================
