@@ -265,3 +265,105 @@ document.write("Current Age: " + currentAge + "<br>");
 document.write("Estimated Maximum Age: " + maximumAge + "<br>");
 document.write("Amount of Snacks per Day: " + snacksPerDay + "<br>");
 document.write("You will need " + totalSnacks + " + favoriteSnack + " to last you until the ripe old age of " + maximumAge);
+
+
+// ==================== Chapter 12-13 ====================
+
+// Q1: Check if input is Number, Uppercase or Lowercase
+var char = prompt("Q1: Enter a single character:");
+var code = char.charCodeAt(0);
+
+if(code >= 48 && code <= 57) {
+    alert("Q1: You entered a Number");
+}
+else if(code >= 65 && code <= 90) {
+    alert("Q1: You entered an Uppercase Letter");
+}
+else if(code >= 97 && code <= 122) {
+    alert("Q1: You entered a Lowercase Letter");
+}
+else {
+    alert("Q1: Invalid Input");
+}
+
+// Q2: Find larger of two integers
+var num1 = +prompt("Q2: Enter first integer:");
+var num2 = +prompt("Q2: Enter second integer:");
+
+if(num1 > num2) {
+    alert("Q2: " + num1 + " is larger");
+}
+else if(num2 > num1) {
+    alert("Q2: " + num2 + " is larger");
+}
+else {
+    alert("Q2: Both numbers are equal");
+}
+
+// Q3: Check Positive, Negative or Zero
+var number = +prompt("Q3: Enter a number:");
+
+if(number > 0) {
+    alert("Q3: Number is Positive");
+}
+else if(number < 0) {
+    alert("Q3: Number is Negative");
+}
+else {
+    alert("Q3: Number is Zero");
+}
+
+// Q4: Check if character is a Vowel
+var ch = prompt("Q4: Enter a single character:").toLowerCase();
+
+if(ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+    alert("Q4: True - It is a Vowel");
+}
+else {
+    alert("Q4: False - It is not a Vowel");
+}
+
+// Q5: Password Validation
+var correctPassword = "Pakistan123";
+var userPass = prompt("Q5: Enter your password:");
+
+if(userPass === "") {
+    alert("Q5: Please enter your password");
+}
+else if(userPass === correctPassword) {
+    alert("Q5: Correct! The password you entered matches the original password");
+}
+else {
+    alert("Q5: Incorrect password");
+}
+
+
+// Q6: Fixed if/else statement
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+}
+else {
+    greeting = "Good evening";
+}
+alert("Q6: " + greeting);
+
+// Q7: Time greeting in 24 hours format
+var time = +prompt("Q7: Enter time in 24-hour format like 1900 for 7pm:");
+
+if (time >= 0000 && time < 1200) {
+    alert("Q7: Good morning");
+}
+else if (time >= 1200 && time < 1700) {
+    alert("Q7: Good afternoon");
+}
+else if (time >= 1700 && time < 2100) {
+    alert("Q7: Good evening");
+}
+else if (time >= 2100 && time <= 2359) {
+    alert("Q7: Good night");
+}
+else {
+    alert("Q7: Invalid time");
+}
