@@ -267,6 +267,159 @@ document.write("Amount of Snacks per Day: " + snacksPerDay + "<br>");
 document.write("You will need " + totalSnacks + " + favoriteSnack + " to last you until the ripe old age of " + maximumAge);
 
 
+// =========================
+// Chapter 6-9
+// Question 1
+// =========================
+
+var a = 10;
+
+document.write("<h2>Question 1</h2>");
+document.write("Result:<br><br>");
+document.write("The value of a is: " + a + "<br>");
+document.write(".............................................<br><br>");
+
+document.write("The value of ++a is: " + (++a) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+
+document.write("The value of a++ is: " + (a++) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+
+document.write("The value of --a is: " + (--a) + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+
+document.write("The value of a-- is: " + (a--) + "<br>");
+document.write("Now the value of a is: " + a + "<hr>");
+
+
+// =========================
+// Question 2
+// =========================
+
+var a = 2;
+var b = 1;
+
+document.write("<h2>Question 2</h2>");
+
+document.write("a is " + a + "<br>");
+document.write("b is " + b + "<br><br>");
+
+document.write("Result of --a: " + (--a) + "<br>");
+document.write("Result of --a - --b: " + (a - --b) + "<br>");
+
+++b;
+document.write("Result of --a - --b + ++b: " + (a - b + b) + "<br>");
+
+var result = a - b + b + b--;
+
+document.write("Result of --a - --b + ++b + b--: " + result + "<br><br>");
+
+document.write("a is " + a + "<br>");
+document.write("b is " + b + "<br>");
+document.write("Result is " + result + "<hr>");
+
+
+// =========================
+// Question 3
+// =========================
+
+document.write("<h2>Question 3</h2>");
+
+var userName = prompt("Enter your name");
+
+alert("Welcome " + userName);
+
+document.write("Welcome " + userName + "<hr>");
+
+
+// =========================
+// Question 4
+// =========================
+
+// Question 4 is not available in PDF.
+
+
+// =========================
+// Question 5
+// =========================
+
+document.write("<h2>Question 5</h2>");
+
+var number = prompt("Enter a number", "5");
+
+if (number === "" || number === null) {
+    number = 5;
+}
+
+document.write("<h3>Multiplication Table of " + number + "</h3>");
+
+for (var i = 1; i <= 10; i++) {
+    document.write(number + " x " + i + " = " + (number * i) + "<br>");
+}
+
+document.write("<hr>");
+
+
+// =========================
+// Question 6
+// =========================
+
+document.write("<h2>Question 6</h2>");
+
+var sub1 = prompt("Enter first subject");
+var sub2 = prompt("Enter second subject");
+var sub3 = prompt("Enter third subject");
+
+var totalMarks = 100;
+
+var marks1 = +prompt("Enter obtained marks for " + sub1);
+var marks2 = +prompt("Enter obtained marks for " + sub2);
+var marks3 = +prompt("Enter obtained marks for " + sub3);
+
+var totalObtained = marks1 + marks2 + marks3;
+var grandTotal = totalMarks * 3;
+var percentage = (totalObtained / grandTotal) * 100;
+
+document.write("<table border='1' cellpadding='8'>");
+
+document.write("<tr>");
+document.write("<th>Subject</th>");
+document.write("<th>Total Marks</th>");
+document.write("<th>Obtained Marks</th>");
+document.write("<th>Percentage</th>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + sub1 + "</td>");
+document.write("<td>" + totalMarks + "</td>");
+document.write("<td>" + marks1 + "</td>");
+document.write("<td>" + ((marks1 / totalMarks) * 100).toFixed(2) + "%</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + sub2 + "</td>");
+document.write("<td>" + totalMarks + "</td>");
+document.write("<td>" + marks2 + "</td>");
+document.write("<td>" + ((marks2 / totalMarks) * 100).toFixed(2) + "%</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + sub3 + "</td>");
+document.write("<td>" + totalMarks + "</td>");
+document.write("<td>" + marks3 + "</td>");
+document.write("<td>" + ((marks3 / totalMarks) * 100).toFixed(2) + "%</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<th></th>");
+document.write("<th>" + grandTotal + "</th>");
+document.write("<th>" + totalObtained + "</th>");
+document.write("<th>" + percentage.toFixed(2) + "%</th>");
+document.write("</tr>");
+
+document.write("</table>");
+
+
 // ==================== Chapter 12-13 ====================
 
 // Q1: Check if input is Number, Uppercase or Lowercase
