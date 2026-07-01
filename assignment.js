@@ -420,6 +420,307 @@ document.write("</tr>");
 document.write("</table>");
 
 
+// ==============================
+// Chapter 9-11
+// Question 1
+// ==============================
+
+var city = prompt("Enter your city name:");
+
+if (city.toLowerCase() === "karachi") {
+    document.write("<h2>Question 1</h2>");
+    document.write("Welcome to city of lights");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 2
+// ==============================
+
+document.write("<h2>Question 2</h2>");
+
+var gender = prompt("Enter your gender (Male/Female)");
+
+if (gender.toLowerCase() === "male") {
+    document.write("Good Morning Sir.");
+}
+else if (gender.toLowerCase() === "female") {
+    document.write("Good Morning Ma'am.");
+}
+else {
+    document.write("Invalid Gender");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 3
+// ==============================
+
+document.write("<h2>Question 3</h2>");
+
+var signal = prompt("Enter Traffic Signal Color");
+
+if (signal.toLowerCase() === "red") {
+    document.write("Must Stop");
+}
+else if (signal.toLowerCase() === "yellow") {
+    document.write("Ready to move");
+}
+else if (signal.toLowerCase() === "green") {
+    document.write("Move now");
+}
+else {
+    document.write("Invalid Signal Color");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 4
+// ==============================
+
+document.write("<h2>Question 4</h2>");
+
+var fuel = parseFloat(prompt("Enter remaining fuel in litres"));
+
+if (fuel < 0.25) {
+    document.write("Please refill the fuel in your car");
+}
+else {
+    document.write("Fuel level is sufficient.");
+}
+
+document.write("<hr>");
+ ==============================
+// Question 5
+// ==============================
+
+document.write("<h2>Question 5</h2>");
+
+// a
+var a = 4;
+if (++a === 5) {
+    alert("given condition for variable a is true");
+}
+
+// b
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+
+// c
+var c = 12;
+
+if (c++ === 13) {
+    alert("condition 1 is true");
+}
+
+if (c === 13) {
+    alert("condition 2 is true");
+}
+
+if (++c < 14) {
+    alert("condition 3 is true");
+}
+
+if (c === 14) {
+    alert("condition 4 is true");
+}
+
+// d
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+}
+
+// e
+if (true) {
+    alert("True");
+}
+
+if (false) {
+    alert("False");
+}
+
+// f
+if ("car" < "cat") {
+    alert("car is smaller than cat");
+}
+
+document.write("Question 5 executed. Check alerts for output.");
+document.write("<hr>");
+
+
+// ==============================
+// Question 6
+// ==============================
+
+document.write("<h2>Question 6</h2>");
+
+var totalMarks = +prompt("Enter Total Marks");
+var obtainedMarks = +prompt("Enter Obtained Marks");
+
+var percentage = (obtainedMarks / totalMarks) * 100;
+
+var grade;
+var remarks;
+
+if (percentage >= 80) {
+    grade = "A-one";
+    remarks = "Excellent";
+}
+else if (percentage >= 70) {
+    grade = "A";
+    remarks = "Good";
+}
+else if (percentage >= 60) {
+    grade = "B";
+    remarks = "You need to improve";
+}
+else {
+    grade = "Fail";
+    remarks = "Sorry";
+}
+
+document.write("<h2>Marks Sheet</h2>");
+document.write("Total Marks : " + totalMarks + "<br>");
+document.write("Marks Obtained : " + obtainedMarks + "<br>");
+document.write("Percentage : " + percentage.toFixed(2) + "%<br>");
+document.write("Grade : " + grade + "<br>");
+document.write("Remarks : " + remarks + "<br>");
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 7
+// ==============================
+
+document.write("<h2>Question 7</h2>");
+
+var secretNumber = 7;
+
+var guess = +prompt("Guess the secret number (1 to 10)");
+
+if (guess === secretNumber) {
+    document.write("Bingo! Correct answer.");
+}
+else if (guess + 1 === secretNumber) {
+    document.write("Close enough to the correct answer.");
+}
+else {
+    document.write("Wrong guess!");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 8
+// ==============================
+
+document.write("<h2>Question 8</h2>");
+
+var number = +prompt("Enter a number");
+
+if (number % 3 === 0) {
+    document.write(number + " is divisible by 3.");
+}
+else {
+    document.write(number + " is not divisible by 3.");
+}
+
+document.write("<hr>");
+ ==============================
+// Question 9
+// ==============================
+
+document.write("<h2>Question 9</h2>");
+
+var number = +prompt("Enter a number");
+
+if (number % 2 === 0) {
+    document.write(number + " is Even.");
+} else {
+    document.write(number + " is Odd.");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 10
+// ==============================
+
+document.write("<h2>Question 10</h2>");
+
+var temperature = +prompt("Enter temperature");
+
+if (temperature > 40) {
+    document.write("It is too hot outside.");
+}
+else if (temperature > 30) {
+    document.write("The Weather today is Normal.");
+}
+else if (temperature > 20) {
+    document.write("Today's Weather is cool.");
+}
+else if (temperature > 10) {
+    document.write("OMG! Today's weather is so Cool.");
+}
+else {
+    document.write("Weather is very cold.");
+}
+
+document.write("<hr>");
+
+
+// ==============================
+// Question 11
+// ==============================
+
+document.write("<h2>Question 11</h2>");
+
+var firstNumber = +prompt("Enter first number");
+var secondNumber = +prompt("Enter second number");
+var operation = prompt("Enter operation (+, -, *, /, %)");
+
+if (operation === "+") {
+    document.write("Result: " + (firstNumber + secondNumber));
+}
+else if (operation === "-") {
+    document.write("Result: " + (firstNumber - secondNumber));
+}
+else if (operation === "*") {
+    document.write("Result: " + (firstNumber * secondNumber));
+}
+else if (operation === "/") {
+    document.write("Result: " + (firstNumber / secondNumber));
+}
+else if (operation === "%") {
+    document.write("Result: " + (firstNumber % secondNumber));
+}
+else {
+    document.write("Invalid Operation");
+}
+
+document.write("<hr>");
+
+// ==============================
+// End of Chapter 9-11
+// ==============================
+
+
+
 // ==================== Chapter 12-13 ====================
 
 // Q1: Check if input is Number, Uppercase or Lowercase
